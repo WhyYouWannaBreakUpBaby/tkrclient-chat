@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TKR Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div>
+      <h1>TKR Chat</h1>
+      <p>TKR Client Chat Room</p>
+    </div>
+
+    <div class="room-controls">
+      <input
+        id="roomInput"
+        type="text"
+        value="general"
+        placeholder="Room name"
+      >
+      <button id="joinBtn" type="button">Join</button>
+    </div>
+  </header>
+
+  <main class="chat-layout">
+
+    <aside class="people">
+      <h3>People</h3>
+      <ul id="peopleList"></ul>
+    </aside>
+
+    <section class="chat">
+
+      <div id="messages" class="messages"></div>
+
+      <form id="messageForm" class="message-form">
+
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Type your message..."
+          autocomplete="off"
+          spellcheck="true"
+        >
+
+        <button id="sendBtn" type="submit">Send</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
